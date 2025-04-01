@@ -1,0 +1,44 @@
+.features {
+    text-align: center;
+   
+    color: white;
+  }
+  
+  .features h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .feature-card {
+    border-radius: 11.077px;
+    border-top: 2.667px solid #4F228D;
+    background: linear-gradient(150deg, #130428 37.22%, #251043 70.43%, #38126D 97.89%, #261045 132.38%, #190634 150.9%), #2C1250;
+    box-shadow: 3.692px 6.462px 24px 0px rgba(0, 0, 0, 0.12), 3.692px 6.462px 24px 0px rgba(0, 0, 0, 0.12), 3.692px 6.462px 24px 0px rgba(0, 0, 0, 0.12);
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-left: 30px;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }

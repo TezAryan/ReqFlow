@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.dashboard {
+  padding: 15px 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body,
+html {
+  width: 100%;
+  min-height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    114deg,
+    rgba(0, 0, 0, 0.86) 28.34%,
+    #371f5a 112.89%
+  );
+}
+
+.border {
+  margin-top: 20px;
+  border-radius: 15px;
+  width: 100%;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-name {
+  color: #fff;
+  text-align: center;
+  font-family: 'Prosto One';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.home-navbar {
+  display: flex;
+}
+
+.profile-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  padding: 7px;
+  border-radius: 100px;
+  background: linear-gradient(
+      -30.12deg,
+      #130428 7.29%,
+      #251043 34.38%,
+      #38126d 56.77%,
+      #261045 84.9%,
+      #190634
+    ),
+    #2c1250;
+  border: 2.7px solid #4f228d;
+  cursor: pointer;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  flex: 1;
+  justify-content: space-between; /* Distribute space between chat-box and action-bar */
+}
+
+/* Chat box styling */
+.chat-box {
+  margin-top: 20px;
+  border-radius: 15px;
+  padding: 20px;
+  flex: 1; /* Let it take up the available space */
+  overflow-y: auto; /* Enable scroll if content overflows */
+  width: 100%;
+}
+
+/* Question styling */
+.question {
+  border: 1px solid rgba(133, 47, 255, 0.41);
+  background: #270c4a;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  float: right;
+  margin: 10px;
+  max-width: 80%;
+  align-self: flex-start;
+}
+
+/* Answer styling */
+.answer {
+  color: #cccccc;
+  font-size: 18px;
+  line-height: 1.6;
+  clear: both;
+  margin: 10px;
+  padding: 5px;
+  align-self: flex-end;
+  
+}
+
+/* Action bar container */
+.action-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 10px 15px;
+  border: 2px solid #4b0082;
+  border-radius: 30px;
+  width: 80%;
+  margin: 0 auto 20px; /* Add margin to the bottom */
+  gap: 10px;
+}
+
+/* Circular icon buttons inside action bar */
+.icon-btn {
+  background-color: #e5e5ea;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  border: 2px solid #4b0082;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-btn img {
+  width: 24px;
+}
+
+/* Chat input field styling */
+.chat-input {
+  flex-grow: 1;
+  margin: 0 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 45%;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.chat-input::placeholder {
+  color: #a9a9a9;
+}
+
+.chat-input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Send button styling (arrow icon) */
+.send-btn {
+  background-color: #eae7eb;
+  border: 2px solid #4b0082;
+  border-radius: 45%;
+  width: 50px;
+  height: 50px;
+}
+
+.send-btn img {
+  width: 24px;
+}
+
+/* Flowchart button styling (separate from action bar) */
+.flowchart-btn {
+  background-color: #c8c8c9;
+  border: 2px solid #4b0082;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flowchart-btn img {
+  width: 2rem;
+
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.file-name {
+  color: #fff;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.cancel-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.cancel-btn img {
+  width: 16px;
+  height: 16px;
+  filter: invert(1); /* Makes the icon visible on dark backgrounds */
+}
+
+.icon-btn:hover,
+.profile-btn:hover,
+.flowchart-btn:hover,
+.send-btn:hover,
+.cancel-btn:hover {
+  background-color: rgba(150, 148, 148, 0.2); 
+  transition: background-color 0.3s ease-in-out;
+
+}
+
+.icon-btn:hover img,
+.profile-btn:hover img,
+.flowchart-btn:hover img,
+.send-btn:hover img,
+.cancel-btn:hover img {
+  opacity: 0.8; 
+  transition: opacity 0.3s ease-in-out;
+}
+
+.send-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1); /* Slight zoom effect */
+  transition: all 0.2s ease-in-out;
+}
